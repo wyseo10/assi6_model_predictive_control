@@ -4,7 +4,7 @@ function state_dot = car_dynamics(t, state, params)
     
     theta = state(3); % state = [x,y,theta]
         
-    state_dot = [V * cos(theta);
-                 V * sin(theta);
+    state_dot = [V * 1;
+                 V * theta;
                  u];
 end
